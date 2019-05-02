@@ -1,13 +1,13 @@
-def my_collect(array)
-  
-  count = 0 
-  collection = []
-  
-  while count < array.count 
-    collection << yield(array[i])
-    count += 1 
-  end 
-  collection 
-end 
+require 'pry'
 
-my_collect(['ruby', 'javascript', 'python', 'objective-c'])
+def my_collect(array)
+   i = 0
+   collection = []
+  while i < array.length
+    collection << yield(array[i])
+    i += 1
+  end
+  collection 
+end
+
+
