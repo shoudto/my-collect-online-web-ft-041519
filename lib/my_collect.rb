@@ -9,4 +9,10 @@ def my_collect(array)
   end
 end
 
+def my_collect(languages)
+  languages.each do |lang|
+    lang.upcase
+  end 
+end 
+
 
